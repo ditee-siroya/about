@@ -1,0 +1,92 @@
+.layout{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 75px;
+    grid-template-areas:
+     "a a b b c c"
+     "i i i i i i"
+     "d e e f f g"
+     "d e e f f g"
+
+    ;
+  }
+  .item2center{
+    grid-area: b;
+    position: relative;
+    place-self: center;
+   
+    
+  }
+  .iteminfo{
+    grid-area: i;
+    position: relative;
+    place-self: center;
+         }
+
+.item1{
+  grid-area: a;
+  position: relative;
+  place-self: center;
+   }
+
+.item2{
+  grid-area: b;
+  position: relative;
+  z-index: 5;
+  }
+.item3{
+  position: relative;
+  grid-area: c;
+        }
+.item4{
+  grid-area: d;
+  position: relative;
+  z-index: 0;
+  }
+.item5{
+  grid-area: e;
+  position: relative;
+  z-index: 1;
+  }
+.item6{
+  grid-area: f;
+  position: relative;
+  z-index: 0;
+  }
+.item7{
+  grid-area: g;
+  position: relative;
+  z-index: 5;
+  
+}
+
+@font-face {
+  font-family: SaintCarell;
+  src: url("SaintCarellClean.otf");
+}
+
+.font1{
+font-family: SaintCarell;
+font-size: 40px;
+
+}
+
+
+@font-face {
+  font-family: ToxTypwriter;
+  src: url("Tox\ Typewriter.ttf");
+}
+
+.font2{
+  font-family: ToxTypewriter;
+  font-size: 30px;
+  color: rgb(41, 32, 54);
+  
+  }
+
+.gif-container {
+  background-image: url("sky-sunset.gif");
+  background-size: cover;
+  background-attachment: fixed;
+   }
+

@@ -1,0 +1,59 @@
+.pos{
+    display: grid;
+    grid-template-columns: 2fr auto 2fr;
+    justify-self: start;
+}
+
+.gif-container {
+    background-image: url("https://i.gifer.com/5x4Z.gif");
+    background-size:cover;
+    background-attachment: fixed;
+     }
+.image-container{
+        display: grid;
+        overflow: hidden; /* Hide any overflow caused by zooming https://i.gifer.com/4NB4.gif*/
+        transition: transform 0.3s ease; /* Add a smooth transition effect */
+      }
+      
+      .image-container img{
+        width: 500px; /* Ensure the image fills the container */
+        height: auto; /* Maintain the image's aspect ratio */
+        transition: transform 0.3s ease; /* Add the same transition effect */
+      }
+      
+      .image-container:hover{
+        transform: scale(1.1); /* Zoom in by 20% on hover */
+      }
+
+      @font-face {
+        font-family: SaintCarell;
+        src: url("SaintCarellClean.otf" );
+      }
+      
+      .font1{
+      font-family: SaintCarell;
+      font-size: 40px;
+      
+      }
+      
+      
+      @font-face {
+        font-family: ToxTypwriter;
+        src: url("Tox_Typewriter.ttf") format('truetype');
+      }
+
+      .font2{
+         font-family: ToxTypwriter;
+        font-size: 30px;
+        color: rgb(155, 155, 155);
+        }
+
+        a {
+          color: white; /* Change this to the desired color */
+          text-decoration: none; /* Remove underline by default */
+      }
+
+      /* Style the linked text on hover (optional) */
+      a:hover {
+          color: rgb(72, 61, 89); /* Change this to the desired color */
+      }
